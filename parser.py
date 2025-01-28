@@ -77,7 +77,7 @@ def fetch_all_products(api_url):
                 break
 
             # Задержка между запросами (например, 2 секунды)
-            time.sleep(2)
+            time.sleep(10)
 
         except requests.RequestException as e:
             logging.error(f"Ошибка запроса: {e}")
