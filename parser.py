@@ -14,7 +14,7 @@ logging.basicConfig(
 
 # Константы
 GOOGLE_SHEETS_CREDENTIALS = "credintails.json"
-SPREADSHEET_ID = "1y_IUnjRHsdEKMDVOYBAFFEAJmzNa9_DJrA_E-10dqac"
+SPREADSHEET_ID = "1DrfcD56COwNZetxi5bWiR1JyEWA3C5nd1TthMAqWvGw"
 SHEET_NAME = "Лист1"
 API_URL = "https://api.apromstal.kz/api/products/"
 LOCAL_JSON_FILE = "products.json"
@@ -40,7 +40,7 @@ def fetch_all_products(api_url):
     while current_url:
         try:
             logging.info(f"Запрос к API: {current_url}")
-            response = requests.get(current_url, timeout=10)
+            response = requests.get(current_url, timeout=25)
             response.raise_for_status()
             data = response.json()
 
@@ -66,7 +66,7 @@ def fetch_all_products(api_url):
                 logging.error("Некорректный ответ API.")
                 break
 
-            time.sleep(10)
+            time.sleep(12)
         except requests.RequestException as e:
             logging.error(f"Ошибка запроса: {e}")
             break
