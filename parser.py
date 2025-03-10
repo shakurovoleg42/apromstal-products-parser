@@ -14,7 +14,7 @@ logging.basicConfig(
 
 # Константы
 GOOGLE_SHEETS_CREDENTIALS = "credintails.json"
-SPREADSHEET_ID = "1DrfcD56COwNZetxi5bWiR1JyEWA3C5nd1TthMAqWvGw"
+SPREADSHEET_ID = "1THZc0BvYxZF3aW8eYIQj5wTwvniwVQ5soukClMoM0SY"
 SHEET_NAME = "Лист1"
 API_URL = "https://api.apromstal.kz/api/products/"
 LOCAL_JSON_FILE = "products.json"
